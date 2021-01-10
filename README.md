@@ -6,5 +6,5 @@ const check = require("check-swear");
 
 // .............
 
-check("whatever string you want!") // returns false
+check("whatever string you want!", "the type of thing that you put in") // returns false
 ```

@@ -519,15 +519,25 @@ const list = [
   "whore",
 ];
 /**
- * @param {String} text What you want to check for swears.
+ * @param {string|String[]} text What you want to check for swears.
+ * @param {string} type If the other option was a string, put (in a string) "string" if the other option was a String[], put "String[]".
  */
-function checkSwear(text) {
-  text.split(" ").forEach((text) => {
-    if (list.includes(text)) {
-      return Boolean(true);
-    } else {
-      return Boolean(false);
-    }
-  });
+function checkSwear(text, type) {
+  let includesSwear = false;
+  if (type === "string") {
+    text.split(" ").forEach((text) => {
+      if (list.includes(text)) {
+        includesSwear = true;
+      }
+    });
+  } else if (type === "String[]") {
+    text.forEach((text) => {
+      if (list.includes(text)) {
+        includesSwear = true;
+      }
+    });
+  }
+  return includesSwear;
 }
+
 module.exports = checkSwear;

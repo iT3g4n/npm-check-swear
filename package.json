@@ -1,6 +1,6 @@
 {
   "name": "check-swear",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Checks if a string has any swears in it! [BETA]",
   "main": "index.js",
   "bin": "index.js",
