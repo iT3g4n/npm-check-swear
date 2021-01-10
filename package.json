@@ -1,6 +1,6 @@
 {
   "name": "check-swear",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "description": "Checks if a string has any swears in it! [BETA]",
   "main": "index.js",
   "bin": "index.js",
@@ -12,19 +12,19 @@
     "check swear",
     "swearing",
     "has-swear",
-    "mature filter",
-    "mature"
+    "swear checker",
+    "swear check"
   ],
   "author": "T3g4n",
   "license": "MIT",
   "repository": {
     "directory": ".",
     "type": "git",
-    "url": "git+https://guthub.com/T3g4nTheCoder/check-swear.git"
+    "url": "git+https://github.com/T3g4nTheCoder/check-swear.git"
   },
   "bugs": {
     "email": "winnerkiller966@gmail.com",
-    "url": "https://guthub.com/T3g4nTheCoder/check-swear/issues"
+    "url": "https://github.com/T3g4nTheCoder/check-swear/issues"
   },
-  "homepage": "https://guthub.com/T3g4nTheCoder/check-swear#readme"
+  "homepage": "https://github.com/T3g4nTheCoder/check-swear#readme"
 }
