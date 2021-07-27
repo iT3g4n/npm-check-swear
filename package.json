@@ -1,6 +1,6 @@
 {
   "name": "check-swear",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Checks if a string has any swears in it!",
   "main": "index.js",
   "bin": "index.js",
@@ -20,11 +20,11 @@
   "repository": {
     "directory": ".",
     "type": "git",
-    "url": "git+https://github.com/TT3g4n/check-swear.git"
+    "url": "git+https://github.com/TT3g4n/npm-check-swear"
   },
   "bugs": {
     "email": "winnerkiller966@gmail.com",
-    "url": "https://github.com/TT3g4n/check-swear/issues"
+    "url": "https://github.com/TT3g4n/npm-check-swear"
   },
-  "homepage": "https://github.com/TT3g4n/check-swear#readme"
+  "homepage": "https://github.com/TT3g4n/npm-check-swear#readme"
 }
