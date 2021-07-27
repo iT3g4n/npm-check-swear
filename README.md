@@ -2,7 +2,6 @@
 
 ```
 npm i --save check-swear
-
 ```
 
 # How to use
