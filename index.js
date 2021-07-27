@@ -520,23 +520,45 @@ const list = [
 ];
 /**
  * @param {string|String[]} text What you want to check for swears.
- * @param {string} type If the other option was a string, put (in a string) "string" if the other option was a String[], put "String[]".
+ * @param {String|String[]} type If the other option was a string, put `String` if the other option was an Array, put `Array`.
  */
 function checkSwear(text, type) {
   let includesSwear = false;
-  if (type === "string") {
-    text.split(" ").forEach((text) => {
-      if (list.includes(text)) {
-        includesSwear = true;
+
+  try {
+    if (!type) {
+      if (typeof type === String) {
+        type = String;
+      } else {
+        type = Array;
       }
-    });
-  } else if (type === "String[]") {
-    text.forEach((text) => {
-      if (list.includes(text)) {
-        includesSwear = true;
-      }
-    });
+    }
+  
+    if (type === String) {
+  
+      text
+        .toLowerCase()
+        .split(" ")
+        .forEach((text) => {
+          console.log(text);
+          if (list.includes(text)) {
+            includesSwear = true;
+          }
+        });
+  
+    } else if (type === Array) {
+  
+      text.forEach((text) => {
+        if (list.includes(text.toLowerCase())) {
+          includesSwear = true;
+        }
+      });
+  
+    }
+  } catch (error) {
+    throw new Error(error)
   }
+
   return includesSwear;
 }
 

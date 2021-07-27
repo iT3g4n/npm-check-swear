@@ -1,3 +1,1 @@
-declare module "check-swear" {
-  (text: string | String[], type: string) => {};
-}
+declare module "check-swear"
